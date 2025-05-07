@@ -128,7 +128,7 @@ const persons = [
   function getFullName(item) {
     return [item.firstname,item.lastname].join(" ");
   }
-  
+
 //splice remove one item and add other items to the list
 
 // Create an Array
@@ -138,6 +138,16 @@ const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
 fruits1.splice(2, 1, "Lemon", "Kiwi");
 console.log(fruits1)
 
+//reduce 
+
+function sum(arr) {
+    const reducer = (sum, val) => sum + val;
+    const initialValue = 0;
+    return arr.reduce(reducer, initialValue);
+  }
+  
+  sum([1, 3, 5, 7]);
+  
 //reverse () the number 
 price=[2,3,4,5,6,7]
 srotedprice=price.sort().reverse()
