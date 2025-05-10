@@ -76,3 +76,4 @@ class emploee{
 }
 
 console.log(emploee.x)
+
